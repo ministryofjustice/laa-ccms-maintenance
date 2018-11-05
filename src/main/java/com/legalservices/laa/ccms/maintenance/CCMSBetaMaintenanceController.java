@@ -44,7 +44,7 @@ public class CCMSBetaMaintenanceController extends BaseController {
         ModelAndView modelandView = new ModelAndView("index", params);
         
         String OssoUser = request.getHeader("Osso-User-Guid"); 
-        logger.info( "Osso_User = " + OssoUser ) ;   
+        logger.info("url[/ccms-beta] "+"Osso_User = " + OssoUser);
 /*        logger.trace( "Osso_User = " + OssoUser ) ; */
         
         return modelandView;

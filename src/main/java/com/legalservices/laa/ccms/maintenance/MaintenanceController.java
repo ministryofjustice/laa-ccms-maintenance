@@ -41,7 +41,7 @@ public class MaintenanceController extends BaseController {
 		model.addAttribute("heading",plannedHeading);
 		model.addAttribute("serviceStatusUrl",serviceStatusUrl);
 		String OssoUser = request.getHeader("Osso-User-Guid");
-		logger.info("Osso_User = " + OssoUser);
+		logger.info("url[/planned] "+"Osso_User = " + OssoUser);
 		/* logger.trace( "Osso_User = " + OssoUser ) ; */
 
 		return "planned";
@@ -54,7 +54,7 @@ public class MaintenanceController extends BaseController {
 		model.addAttribute("heading",unplannedHeading);
 		model.addAttribute("serviceStatusUrl",serviceStatusUrl);
 		String OssoUser = request.getHeader("Osso-User-Guid");
-		logger.info("Osso_User = " + OssoUser);
+		logger.info("url[/unplanned] "+"Osso_User = " + OssoUser);
 		/* logger.trace( "Osso_User = " + OssoUser ) ; */
 
 		return "unplanned";
