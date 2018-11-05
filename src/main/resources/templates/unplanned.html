@@ -1,0 +1,23 @@
+{{>/fragments/pre-content}}
+<div class="width-container">
+	<main id="content" role="main" class="class="main-wrapper"">
+
+	<div class="grid-row">
+		<div class="column-full">
+			<h1 class="heading-xlarge">{{ heading }}</h1>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<p>Please try again later</p>
+		</div>
+		<div class="column-one-third">
+			<div id="global-header-bar"></div>
+			<h2 class="heading-small">Service overview</h2>
+			<iframe id="scaled-frame" src="{{serviceStatusUrl}}" scrolling="no"
+				width="285" height="600" frameborder="0"></iframe>
+		</div>
+	</div>
+	</main>
+</div>
+{{>/fragments/post-content}}

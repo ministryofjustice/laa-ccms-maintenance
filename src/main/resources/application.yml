@@ -1,0 +1,41 @@
+spring:
+  mustache:
+    enabled: true
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+
+service:
+ status:
+  url: https://laa-dashboard.firebaseapp.com/
+  
+topOfPage: 
+htmlLang: EN
+title:
+ beta: LAA CCMS Beta
+ planned: Sorry, the service is unavailable – CCMS – Legal Aid Agency
+ unplanned: There is a problem with the service – CCMS – Legal Aid Agency
+
+heading: 
+ planned: Sorry, the service is unavailable
+ unplanned: Sorry, there is a problem with the service
+
+assetPath: /govuk_modules/govuk_template/assets/
+head:
+bodyStart:
+skipLinkMessage:
+bodyClasses: js-enabled
+headerClass: with-proposition
+globalHeaderText: Legal Aid Agency
+insideHeader:
+propositionHeader: propositionHeader
+cookieMessage:  <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+afterHeader:
+content: <div class="container">content</div>
+footerTop:
+footerSupportLinks: 
+licenceMessage: <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+bodyEnd:
+homepageUrl: https://www.gov.uk/government/organisations/legal-aid-agency
+logoLinkTitle: Go to the Legal Aid Agency on GOV.UK
+crownCopyrightMessage: © Crown copyright

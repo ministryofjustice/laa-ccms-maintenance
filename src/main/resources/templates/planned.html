@@ -1,0 +1,34 @@
+{{>/fragments/pre-content}}
+
+<div class="width-container">
+
+	<main id="content" role="main" class="class="main-wrapper"">
+	<div class="grid-row">
+		<div class="column-full">
+			<h1 class="heading-xlarge">{{ heading }}</h1>
+		</div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<p>Information about the availability of services is displayed on
+				the right-hand side of this page.</p>
+			<p>
+				For enquiries relating to emergency out of hours immigration
+				applications, contact <a
+					href="mailto:asylum-out-of-hours@justice.gov.uk">asylum-out-of-hours@justive.gov.uk.</a>
+			</p>
+
+		</div>
+		<div class="column-one-third">
+			<div id="global-header-bar"></div>
+			<h2 class="heading-small">Service overview</h2>
+
+			<iframe id="scaled-frame" src="{{serviceStatusUrl}}" scrolling="no"
+				width="285" height="600" frameborder="0"></iframe>
+		</div>
+	</div>
+	</main>
+</div>
+
+{{>/fragments/post-content}}
