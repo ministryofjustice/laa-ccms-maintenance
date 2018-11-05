@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/maintenance")
 public class MaintenanceController extends BaseController {
 
 	final static Logger logger = LoggerFactory.getLogger(MaintenanceController.class);
