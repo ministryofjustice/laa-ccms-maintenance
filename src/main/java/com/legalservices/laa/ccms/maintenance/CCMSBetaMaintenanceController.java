@@ -32,7 +32,7 @@ public class CCMSBetaMaintenanceController extends BaseController {
 	}
 
 	/* , headers = "content-type=text/*" */
-	@RequestMapping( value="/" , method = RequestMethod.GET )
+	@RequestMapping( value="/beta-unavailable" , method = RequestMethod.GET )
     public ModelAndView index() {
     	    	
     	/* output mustache parameters */   	
@@ -44,7 +44,7 @@ public class CCMSBetaMaintenanceController extends BaseController {
         ModelAndView modelandView = new ModelAndView("index", params);
         
         String OssoUser = request.getHeader("Osso-User-Guid"); 
-        logger.info("url[/ccms-beta] "+"Osso_User = " + OssoUser);
+        logger.info("url[/beta-unavailable] "+"Osso_User = " + OssoUser);
 /*        logger.trace( "Osso_User = " + OssoUser ) ; */
         
         return modelandView;

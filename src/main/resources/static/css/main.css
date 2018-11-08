@@ -3,3 +3,7 @@
 #scaled-frame{
 	transform: scale(calc(300/285))  translate(7.5px, 7.5px);
 }
+
+#logo {
+	font-weight: normal !important;
+}
