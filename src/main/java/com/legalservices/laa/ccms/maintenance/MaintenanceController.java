@@ -40,6 +40,7 @@ public class MaintenanceController extends BaseController {
 		model.addAttribute("pageTitle", plannedPageTitle);
 		model.addAttribute("heading",plannedHeading);
 		model.addAttribute("serviceStatusUrl",serviceStatusUrl);
+		model.addAttribute("maintenance-type", "planned");
 		String OssoUser = request.getHeader("Osso-User-Guid");
 		logger.info("url[/planned] "+"Osso_User = " + OssoUser);
 		/* logger.trace( "Osso_User = " + OssoUser ) ; */
@@ -53,6 +54,7 @@ public class MaintenanceController extends BaseController {
 		model.addAttribute("pageTitle", unplannedPageTitle);
 		model.addAttribute("heading",unplannedHeading);
 		model.addAttribute("serviceStatusUrl",serviceStatusUrl);
+		model.addAttribute("maintenance-type", "unplanned");
 		String OssoUser = request.getHeader("Osso-User-Guid");
 		logger.info("url[/unplanned] "+"Osso_User = " + OssoUser);
 		/* logger.trace( "Osso_User = " + OssoUser ) ; */

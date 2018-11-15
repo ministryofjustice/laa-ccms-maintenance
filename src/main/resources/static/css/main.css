@@ -1,9 +1,17 @@
-
-
-#scaled-frame{
-	transform: scale(calc(300/285))  translate(7.5px, 7.5px);
+#scaled-frame {
+	transform: scale(calc(300/ 285)) translate(7.5px, 7.5px);
 }
 
 #logo {
 	font-weight: normal !important;
+}
+
+#side-header-bar {
+	height: 10px;
+	background-color: #005ea5;
+}
+
+
+div#global-header-bar.unplanned, div#side-header-bar.unplanned {
+	background-color: #DF3034 
 }

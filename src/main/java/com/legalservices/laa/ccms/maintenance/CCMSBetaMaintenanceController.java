@@ -41,6 +41,7 @@ public class CCMSBetaMaintenanceController extends BaseController {
 /*    	return new ModelAndView("index", params());  */
     		Map<String,String> params = params();
     	    params.put("pageTitle", pageTitle);
+    	    params.put("maintenance-type", "planned");
         ModelAndView modelandView = new ModelAndView("index", params);
         
         String OssoUser = request.getHeader("Osso-User-Guid"); 
