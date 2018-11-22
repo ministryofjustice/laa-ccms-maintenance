@@ -45,7 +45,8 @@ public class CCMSBetaMaintenanceController extends BaseController {
         ModelAndView modelandView = new ModelAndView("index", params);
         
         String OssoUser = request.getHeader("Osso-User-Guid"); 
-        logger.info("url[/beta-unavailable] "+"Osso_User = " + OssoUser);
+    	    String proxyRemoteUser = request.getHeader("Proxy-Remote-User");
+        logger.info("url[/beta-unavailable] "+"Osso_User = " + OssoUser + "Proxy-Remote-User = " + proxyRemoteUser );
 /*        logger.trace( "Osso_User = " + OssoUser ) ; */
         
         return modelandView;
